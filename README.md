@@ -42,7 +42,7 @@ $ php artisan monobank:install
     
 ### Currency rates
 
-#### rate
+#### rate($from, $to)
 Get exchange rate for currency pair. Response: **float**
 
 ```php
@@ -58,7 +58,7 @@ $rate = \Kolirt\Monobank\Facade\Monobank::rate($from, $to);
 $rate = \Kolirt\Monobank\Facade\Monobank::rate('UAH', 'USD');
 ```
 
-#### pair
+#### pair($from, $to)
 Get currency pair. Response: **[CurrencyInfo:object](#currencyinfoobject)**
 
 ```php
@@ -74,7 +74,7 @@ $pair = Monobank::pair($from, $to);
 $pair = Monobank::pair('UAH', 'USD');
 ```
 
-#### pairs
+#### pairs($currency = null)
 Get currency pairs by currency code. Response: **Collection of [CurrencyInfo:object](#currencyinfoobject)**
 
 ```php
@@ -89,7 +89,7 @@ $pairs = Monobank::pairs($currency);
 $pairs = Monobank::pairs('EUR');
 ```
 
-#### exchange
+#### exchange($from, $to, float $amount)
 Calculate exchange result. Response: **float**
 
 ```php
@@ -105,7 +105,7 @@ $total = Monobank::exchange($from, $to, 1000);
 $total = Monobank::exchange('UAH', 'USD', 1000);
 ```
 
-#### pairExist
+#### pairExist($from, $to)
 Check to pair exist. Response: **bool**
 
 ```php
@@ -121,7 +121,7 @@ $total = Monobank::pairExist($from, $to);
 $total = Monobank::pairExist('UAH', 'USD');
 ```
 
-#### validateCurrencyTypes
+#### validateCurrencyTypes(string|integer ...$currency)
 Validate list of currency ISO codes or ISO numbers. Response: **bool**
 
 ```php
