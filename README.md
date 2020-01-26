@@ -1,5 +1,4 @@
 # Laravel Monobank
-
 This package was created for [Monobank API](https://api.monobank.ua/docs).
 
 ## Installation
@@ -33,19 +32,18 @@ $ php artisan monobank:install
 
 
 ## Methods
-
 - [Currency rates](#currency-rates)
     - [Get exchange rate for currency pair.](#rate)
     - [Get currency pair.](#pair)
     - [Get currency pairs by currency code.](#pairs)
     - [Calculate exchange result.](#exchange)
-    - [Check to pair exist.](#pairExist)
-    - [Validate list of currency ISO codes or ISO numbers.](#validateCurrencyTypes)
+    - [Check to pair exist.](#validatecurrencytypes)
+    - [Validate list of currency ISO codes or ISO numbers.](#validatecurrencytypes)
     
 ### Currency rates
 
 #### rate
-Get exchange rate for currency pair. Response: float
+Get exchange rate for currency pair. Response: **float**
 
 ```php
 <?php
@@ -61,7 +59,7 @@ $rate = \Kolirt\Monobank\Facade\Monobank::rate('UAH', 'USD');
 ```
 
 #### pair
-Get currency pair. Response: [CurrencyInfo:object](#CurrencyInfo:object)
+Get currency pair. Response: **[CurrencyInfo:object](#currencyinfoobject)**
 
 ```php
 <?php
@@ -77,7 +75,7 @@ $pair = Monobank::pair('UAH', 'USD');
 ```
 
 #### pairs
-Get currency pairs by currency code. Response: Collection of [CurrencyInfo:object](#CurrencyInfo:object)
+Get currency pairs by currency code. Response: **Collection of [CurrencyInfo:object](#currencyinfoobject)**
 
 ```php
 <?php
@@ -92,7 +90,7 @@ $pairs = Monobank::pairs('EUR');
 ```
 
 #### exchange
-Calculate exchange result. Response: float
+Calculate exchange result. Response: **float**
 
 ```php
 <?php
@@ -108,7 +106,7 @@ $total = Monobank::exchange('UAH', 'USD', 1000);
 ```
 
 #### pairExist
-Check to pair exist. Response: bool
+Check to pair exist. Response: **bool**
 
 ```php
 <?php
@@ -124,7 +122,7 @@ $total = Monobank::pairExist('UAH', 'USD');
 ```
 
 #### validateCurrencyTypes
-Validate list of currency ISO codes or ISO numbers. Response: bool
+Validate list of currency ISO codes or ISO numbers. Response: **bool**
 
 ```php
 <?php
