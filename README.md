@@ -33,12 +33,12 @@ $ php artisan monobank:install
 
 ## Methods
 - [Currency rates](#currency-rates)
-    - [Get exchange rate for currency pair.](#rate)
-    - [Get currency pair.](#pair)
-    - [Get currency pairs by currency code.](#pairs)
-    - [Calculate exchange result.](#exchange)
-    - [Check to pair exist.](#validatecurrencytypes)
-    - [Validate list of currency ISO codes or ISO numbers.](#validatecurrencytypes)
+    - [Get exchange rate for currency pair.](#ratefrom-to)
+    - [Get currency pair.](#pairfrom-to)
+    - [Get currency pairs by currency code.](#pairscurrency--null)
+    - [Calculate exchange result.](#exchangefrom-to-float-amount)
+    - [Check to pair exist.](#pairexistfrom-to)
+    - [Validate list of currency ISO codes or ISO numbers.](#validatecurrencytypesstringinteger-currency)
     
 ### Currency rates
 
