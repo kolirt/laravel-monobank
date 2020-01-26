@@ -114,11 +114,11 @@ Check to pair exist. Response: **bool**
 $from = \Kolirt\Monobank\Monobank::CURRENCIES['UAH'];
 $to = \Kolirt\Monobank\Monobank::CURRENCIES['USD'];
 
-$total = Monobank::pairExist($from, $to);
+$bool = Monobank::pairExist($from, $to);
 
 // OR
 
-$total = Monobank::pairExist('UAH', 'USD');
+$bool = Monobank::pairExist('UAH', 'USD');
 ```
 
 #### validateCurrencyTypes(string|integer ...$currency)
