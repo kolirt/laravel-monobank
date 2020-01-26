@@ -20,7 +20,7 @@ $ php artisan monobank:install
     +"baseCurrencyCode": "UAH"
     +"relatedCurrency": 978
     +"relatedCurrencyCode": "EUR"
-    +"date": Carbon\Carbon @1579924208 {
+    +"date": Carbon\Carbon {
         date: 2020-01-25 03:50:08.0 UTC (+00:00)
     }
     +"rateBuy": 26.7
